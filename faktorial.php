@@ -6,10 +6,10 @@ if (isset($_POST['submit'])) {
     $input = isset($_POST['input']) ? (int)$_POST['input'] : '';
 
 
-    function faktorial($x)
+    function faktorial($input)
     {
         $hasil = 1;
-        for ($i = 1; $i <= $x; $i++) {
+        for ($i = 1; $i <= $input; $i++) {
             $hasil = $hasil * $i;
         }
         return $hasil;
